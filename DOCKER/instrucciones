@@ -1,0 +1,39 @@
+es importante tomar en cuenta que hay archivos ocultos necesarios para para que corra
+por lo que descargar toda la carpeta de DOCKER es importante
+
+se corre lo siguiente dentro de DOCKER
+
+	docker-compose build
+
+hay que esperar
+
+	docker-compose up -d
+
+esperar de nuevo
+
+	docker ps
+
+ahí aparece el id del contenedor y el puerto de uso , es necesario el primero para lo que sigue
+
+	docker exec -it (hay que añadir aquí el id container) bash
+
+cambiará el bash ya que estamos dentro
+
+	npm start
+
+ya están corriendo los servicios
+
+se entra a localhost:(numero de puerto por ejemplo 8085) desde el buscador de preferencia
+
+aparecerá :
+
+	Express
+
+	Welcome to Express
+
+se presiona
+
+	exit 
+
+en la terminal para cerrar los servicios y volver al interior de la carpeta de DOCKER
+
